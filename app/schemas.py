@@ -8,3 +8,8 @@ class UserCreate(schemas.BaseUserCreate):
 
 class UserUpdate(schemas.BaseUserUpdate):
     username: str | None = None
+
+class HabitSchema(BaseModel):
+    name: str
+    target_per_week: int
+
