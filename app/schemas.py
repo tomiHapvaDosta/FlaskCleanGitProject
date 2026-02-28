@@ -13,3 +13,9 @@ class HabitSchema(BaseModel):
     name: str
     target_per_week: int
 
+class LogSchema(BaseModel):
+    done: bool
+    mood: int
+    notes: str
+    date: datetime.date
+    habit_id: uuid.UUID | None = None

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Form, Depends, status, Request
 from contextlib import asynccontextmanager
 import uuid
-from datetime import datetime
+from datetime import datetime, date
 from pydantic import BaseModel
 from fastapi_users import schemas, BaseUserManager, FastAPIUsers, UUIDIDMixin, models
 from collections.abc import AsyncGenerator
